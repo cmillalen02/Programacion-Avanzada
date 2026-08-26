@@ -1,8 +1,12 @@
 package org.example;
 import java.math.BigInteger;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        int numero=100;
+        Scanner scanner=new Scanner(System.in);
+        int numero;
+        numero= scanner.nextInt();
         Object[] resIterativo = factorial(numero);
         System.out.println(" Lineal (N = " + numero + ") ");
         System.out.println("Resultado: " + resIterativo[0]);
